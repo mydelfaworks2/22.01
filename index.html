@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tolya</title>
+</head>
+
+<body>
+    <!-- <ul class="books">
+        <li class="books__item1 book">книга 1</li>
+        <li class="books__item2 book">книга 2</li>
+        <li class="books__item3 book">книга 3</li>
+    </ul> -->
+
+    <!-- <div id="text">текст</div> -->
+
+    <form>
+        <input type="password" id="pass">
+        <label>
+            <input type="checkbox" id="show">
+            <span>пьоузахзать парлль</span>
+        </label>
+
+    </form>
+
+    <script>
+        // const booksList = document.querySelector('.books');
+        // const booksElem = document.querySelector('.books__item2');
+
+        // console.log(booksList.childNodes);
+        // console.log(booksList.children);
+        // console.log(booksElem.parentElement);
+        // console.log(booksElem.parentNode);
+
+        // console.log(booksElem.nextSibling);
+        // console.log(booksElem.nextElementSibling);
+
+        // console.log(booksElem.previousSibling);
+        // console.log(booksElem.previousElementSibling);
+
+        // const text = document.getElementById('text');
+
+        // console.log(text.hasAttribute("id"));
+        // console.log(text.hasAttribute("class"));
+
+        // console.log(text.getAttribute("id"));
+
+        // text.setAttribute("id", "block");
+
+        // text.removeAttribute("id");
+
+        const passwd = document.getElementById('pass');
+        const showCheckbox = document.getElementById('show');
+
+        showCheckbox.addEventListener('click', () => {
+            if (showCheckbox.checked)
+                passwd.setAttribute("type", "text")
+            else
+                passwd.setAttribute("type", "password");
+        });
+    </script>
+</body>
+
+</html>
