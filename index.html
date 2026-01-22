@@ -4,113 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tolya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
     <style>
-        .wrapper {
-            border: 2px solid lime;
+        .wrapper{
+            /* border: 2px solid lime; */
         }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- <ul class="books">
-        <li class="books__item1 book">книга 1</li>
-        <li class="books__item2 book">книга 2</li>
-        <li class="books__item3 book">книга 3</li>
-    </ul> -->
+        <li class="book books__item1">Книга 1</li>
+        <li class="book books__item2">Книга 2</li>
+        <li class="book books__item3">Книга 3</li>
+    </ul>  -->
 
-    <!-- <div id="text" data-color="red">текст</div> -->
+    <!-- <div id="text" data-color="red">Текст</div> -->
 
-    <!-- <form>
-        <input type="password" id="pass">
-        <label>
-            <input type="checkbox" id="show">
-            <span>пьоузахзать парлль</span>
-        </label>
-    </form> -->
+    <!-- 
+<form>
+    <input type="password" id="pass">
+
+    <label>
+        <input type="checkbox" id="show">
+        <span>Показать пароль</span>
+    </label>
+    
+</form> -->
 
     <!-- <div class="wrapper">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil possimus ex dolorem, quisquam commodi, neque
-            minus explicabo adipisci inventore rerum esse voluptate earum sequi facilis animi harum omnis ipsam qui
-            eaque tenetur provident, unde suscipit? Itaque deserunt animi aspernatur velit labore debitis aperiam
-            recusandae quia ipsam doloribus facilis iste fugiat praesentium asperiores, dolorum id obcaecati alias
-            quaerat porro distinctio. Maxime vitae sit explicabo, dolorum tenetur animi aliquam repellendus recusandae
-            nam placeat odit eum illo pariatur repudiandae, voluptas iusto esse quidem perspiciatis quaerat impedit
-            ipsum quod et. Debitis architecto laboriosam odit hic sint, repellat ad quod, quisquam assumenda dolorem,
-            nihil unde?</p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt numquam, voluptatum minus ratione
+            asperiores, tenetur aspernatur maiores nesciunt pariatur accusamus vero? Dolorem sed quisquam hic veritatis
+            tempora quaerat corporis fugit.</p>
+
     </div> -->
 
-    <h1>список дел</h1>
-    <textarea name="" id="task" placeholder="веди заачу"></textarea>
-    <button id="btnAdd">добарвит</button>
-    <ul id="task-list"></ul>
 
-    <script>
-        // const booksList = document.querySelector('.books');
-        // const booksElem = document.querySelector('.books__item2');
+    <div class="wrapper">
+        <h1>Список дел</h1>
+        <textarea name="" id="task" placeholder="Введите задачу"></textarea>
+        <button id="btnAdd">Добавить</button>
+        <ul id="task-list"></ul>
+    </div>
 
-        // console.log(booksList.childNodes);
-        // console.log(booksList.children);
-        // console.log(booksElem.parentElement);
-        // console.log(booksElem.parentNode);
+    <div class="modal-wrapper">
+        <div class="modal-info">
+            <p>тi уверен доо?</p>
+            <div class="modal__btn-block">
+                <button id="deleteOK">доо</button>
+                <button id="deletoCancel">нi</button>
+            </div>
+        </div>
+    </div>
 
-        // console.log(booksElem.nextSibling);
-        // console.log(booksElem.nextElementSibling);
 
-        // console.log(booksElem.previousSibling);
-        // console.log(booksElem.previousElementSibling);
-
-        // const text = document.getElementById('text');
-
-        // console.log(text.hasAttribute("id"));
-        // console.log(text.hasAttribute("class"));
-
-        // console.log(text.getAttribute("id"));
-
-        // text.setAttribute("id", "block");
-
-        // text.removeAttribute("id");
-
-        // const passwd = document.getElementById('pass');
-        // const showCheckbox = document.getElementById('show');
-
-        // showCheckbox.addEventListener('click', () => {
-        //     // if (showCheckbox.checked)
-        //     //     passwd.setAttribute("type", "text")
-        //     // else
-        //     //     passwd.setAttribute("type", "password");
-        //     passwd.setAttribute("type", showCheckbox.checked ? "text" : "password");
-        // });
-
-        // const text = document.getElementById("text");
-
-        //1
-        // const color = text.getAttribute("data-color");
-        // text.style.color = color;
-
-        //2
-        // const color2 = text.dataset.color;
-        // text.style.color = color2;
-
-        // const wrapper = document.querySelector('.wrapper');
-        // const newEl = document.createElement('h2');
-        // newEl.innerHTML = "noviy <i>teks</i>t";
-        // wrapper.append(newEl);
-        // wrapper.prepend(newEl);
-        // wrapper.before(newEl);
-        // wrapper.after(newEl);
-
-        const task = document.getElementById('task');
-        const btnAdd = document.getElementById('btnAdd');
-        const taskList = document.getElementById('task-list');
-
-        btnAdd.addEventListener('click', () => {
-            const newTask = document.createElement("li");
-            newTask.innerHTML = task.value;
-            taskList.prepend(newTask);
-            task.value = "";
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
